@@ -1,0 +1,66 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Critters"
+run/main_scene="uid://crp3ncflvhpeb"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[debug]
+
+gdscript/warnings/unassigned_variable_op_assign=2
+gdscript/warnings/shadowed_variable=2
+gdscript/warnings/shadowed_variable_base_class=2
+gdscript/warnings/shadowed_global_identifier=2
+gdscript/warnings/untyped_declaration=1
+gdscript/warnings/inferred_declaration=1
+gdscript/warnings/unsafe_property_access=2
+gdscript/warnings/unsafe_method_access=2
+gdscript/warnings/unsafe_cast=1
+gdscript/warnings/unsafe_call_argument=2
+gdscript/warnings/unsafe_void_return=2
+gdscript/warnings/return_value_discarded=1
+gdscript/warnings/static_called_on_instance=2
+gdscript/warnings/missing_tool=2
+gdscript/warnings/missing_await=1
+gdscript/warnings/int_as_enum_without_match=2
+gdscript/warnings/confusable_local_declaration=2
+gdscript/warnings/confusable_local_usage=2
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=2
+
+[importer_defaults]
+
+csv_translation={
+&"delimiter": 2
+}
+
+[input_devices]
+
+pointing/android/enable_long_press_as_right_click=true
+
+[internationalization]
+
+locale/include_text_server_data=true
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
