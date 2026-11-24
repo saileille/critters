@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_lxlmu")
 _name = "Basic Attack"
-_attack_modifier = 1.0
+_attack_modifier = 0.5
 metadata/_custom_type_script = "uid://dsx6sj4besi54"
