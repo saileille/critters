@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trainer" format=3 uid="uid://chwbx26itdkjh"]
+
+[ext_resource type="Script" uid="uid://cqd3uuaq0i584" path="res://scripts/resources/critter.gd" id="1_srxki"]
+[ext_resource type="Script" uid="uid://cga8d5jylg12j" path="res://scripts/resources/trainer.gd" id="2_6dnws"]
+[ext_resource type="Resource" uid="uid://tnst4482saxm" path="res://resources/critters/squig_critter.tres" id="2_cej5p"]
+
+[resource]
+script = ExtResource("2_6dnws")
+_name = "Squiggly"
+_critters = Array[ExtResource("1_srxki")]([ExtResource("2_cej5p")])
+metadata/_custom_type_script = "uid://cga8d5jylg12j"

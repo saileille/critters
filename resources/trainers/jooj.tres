@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trainer" format=3 uid="uid://b340yf3rkocef"]
+
+[ext_resource type="Script" uid="uid://cqd3uuaq0i584" path="res://scripts/resources/critter.gd" id="1_3rnrr"]
+[ext_resource type="Script" uid="uid://cga8d5jylg12j" path="res://scripts/resources/trainer.gd" id="2_8wj02"]
+[ext_resource type="Resource" uid="uid://nk0nf5iw1j4b" path="res://resources/critters/jooj_critter.tres" id="2_70fpk"]
+
+[resource]
+script = ExtResource("2_8wj02")
+_name = "Jooj"
+_critters = Array[ExtResource("1_3rnrr")]([ExtResource("2_70fpk")])
+metadata/_custom_type_script = "uid://cga8d5jylg12j"

@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="Critter" format=3 uid="uid://nk0nf5iw1j4b"]
 
-[ext_resource type="Script" uid="uid://cqd3uuaq0i584" path="res://scripts/objects/critter.gd" id="1_1kraa"]
+[ext_resource type="Script" uid="uid://cqd3uuaq0i584" path="res://scripts/resources/critter.gd" id="1_60cml"]
 
 [resource]
-script = ExtResource("1_1kraa")
-_name = "Jooj"
+script = ExtResource("1_60cml")
+_name = "Jooj Critter"
 _attack = 1
 _defence = 1
-_speed = 1
+speed = 1
 metadata/_custom_type_script = "uid://cqd3uuaq0i584"
