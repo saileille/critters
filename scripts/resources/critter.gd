@@ -2,9 +2,9 @@ class_name Critter
 extends Resource
 
 @export var name: String
-@export_range(1, 10, 1, "or_greater") var _attack: int
-@export_range(1, 10, 1, "or_greater") var defence: int
-@export_range(1, 10, 1, "or_greater") var speed: int
+@export_range(1, 10, 1, "or_greater") var _attack: int = 1
+@export_range(1, 10, 1, "or_greater") var defence: int = 1
+@export_range(1, 10, 1, "or_greater") var speed: int = 1
 
 var hp: int = 100
 

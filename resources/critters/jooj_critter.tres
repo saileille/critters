@@ -5,6 +5,4 @@
 [resource]
 script = ExtResource("1_gvacs")
 name = "Jooj Critter"
-_attack = 1
-speed = 1
 metadata/_custom_type_script = "uid://cqd3uuaq0i584"

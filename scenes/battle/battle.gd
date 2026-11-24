@@ -16,8 +16,9 @@ var _battle_over: bool:
 func _ready() -> void:
 	for i: int in range(0, _trainers.size()):
 		var trainer: Trainer = _trainers[i]
+		var cards: Array[Card] = Card.get_all()
 		for n: int in range(0, 40):
-			trainer.cards.append(load("uid://bmf5nmclkkk18"))
+			trainer.cards.append(cards.pick_random())
 		
 		teams.append(TrainerBattleState.create(trainer, i))
 	
