@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Critter" format=3 uid="uid://tnst4482saxm"]
+
+[ext_resource type="Script" uid="uid://cqd3uuaq0i584" path="res://scripts/objects/critter.gd" id="1_a6upf"]
+
+[resource]
+script = ExtResource("1_a6upf")
+_name = "Squig"
+_attack = 2
+_defence = 2
+_speed = 2
+metadata/_custom_type_script = "uid://cqd3uuaq0i584"
