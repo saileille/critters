@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dj68h3ubpjebi"]
+
+[ext_resource type="Script" uid="uid://dyao0fj47r8jf" path="res://ui/battle/critter_card.gd" id="1_2a4tn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2a4tn"]
+bg_color = Color(0, 0.45882353, 0, 1)
+
+[node name="CritterCard" type="PanelContainer" unique_id=411205694 node_paths=PackedStringArray("_critter_name")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2a4tn")
+script = ExtResource("1_2a4tn")
+_critter_name = NodePath("Name")
+
+[node name="Name" type="RichTextLabel" parent="." unique_id=1219678834]
+layout_mode = 2
+text = "nasme"
+fit_content = true
+autowrap_mode = 0

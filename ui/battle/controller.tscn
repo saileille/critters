@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://doasa4hbpsijw"]
+
+[ext_resource type="Texture2D" uid="uid://cuirshtlt8tfc" path="res://icon.svg" id="1_dr8iu"]
+[ext_resource type="Script" uid="uid://dyw5myk4g82ho" path="res://ui/battle/controller.gd" id="1_vluxi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fh7rg"]
+texture = ExtResource("1_dr8iu")
+modulate_color = Color(1, 1, 1, 0.4509804)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dr8iu"]
+
+[node name="UI" type="CanvasLayer" unique_id=169603139]
+script = ExtResource("1_vluxi")
+
+[node name="Control" type="Control" parent="." unique_id=589632186]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="Control" unique_id=1727956009]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_fh7rg")
+
+[node name="OpponentTrainer" type="PanelContainer" parent="Control" unique_id=1071614474]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 161.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_dr8iu")
+
+[node name="OpponentName" type="RichTextLabel" parent="Control/OpponentTrainer" unique_id=1106646851]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Opponent trainer if needed"
+fit_content = true
+
+[node name="CardSpace" type="PanelContainer" parent="Control" unique_id=570477446]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -178.0
+offset_top = -71.0
+offset_right = 178.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Cards" type="HBoxContainer" parent="Control/CardSpace" unique_id=914850914]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PlayerTrainer" type="PanelContainer" parent="Control" unique_id=353545657]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -161.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_dr8iu")
+
+[node name="PlayerName" type="RichTextLabel" parent="Control/PlayerTrainer" unique_id=484825226]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player trainer if needed"
+fit_content = true
+
+[node name="OpponentCritterSpace" type="PanelContainer" parent="Control" unique_id=1131065872]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -178.0
+offset_right = 178.0
+offset_bottom = 71.0
+grow_horizontal = 2
+
+[node name="OpponentCritters" type="HBoxContainer" parent="Control/OpponentCritterSpace" unique_id=243399932]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerCritterSpace" type="PanelContainer" parent="Control" unique_id=1251380963]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = 5.1600037
+offset_right = 178.0
+offset_bottom = 76.16
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerCritters" type="HBoxContainer" parent="Control/PlayerCritterSpace" unique_id=1549374917]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1

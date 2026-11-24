@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://h71k0capt38r"]
+
+[ext_resource type="Script" uid="uid://bqtcc8bgd7h3q" path="res://ui/battle/card.gd" id="1_dxw5w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r41v7"]
+bg_color = Color(1, 0.43529412, 0, 1)
+
+[node name="Card" type="PanelContainer" unique_id=1915447598 node_paths=PackedStringArray("_name")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r41v7")
+script = ExtResource("1_dxw5w")
+_name = NodePath("CardName")
+
+[node name="CardName" type="RichTextLabel" parent="." unique_id=1521352895]
+layout_mode = 2
+text = "bleh"
+fit_content = true
+autowrap_mode = 0

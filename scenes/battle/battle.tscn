@@ -4,7 +4,11 @@
 [ext_resource type="Script" uid="uid://cga8d5jylg12j" path="res://scripts/resources/trainer.gd" id="2_0yh6x"]
 [ext_resource type="Resource" uid="uid://b340yf3rkocef" path="res://resources/trainers/jooj.tres" id="2_xd4uy"]
 [ext_resource type="Resource" uid="uid://chwbx26itdkjh" path="res://resources/trainers/squiggly.tres" id="3_0yh6x"]
+[ext_resource type="PackedScene" uid="uid://doasa4hbpsijw" path="res://ui/battle/controller.tscn" id="5_h0kxc"]
 
 [node name="Battle" type="Node2D" unique_id=802385292]
 script = ExtResource("1_7gynk")
 _trainers = Array[ExtResource("2_0yh6x")]([ExtResource("3_0yh6x"), ExtResource("2_xd4uy")])
+
+[node name="UI" parent="." unique_id=169603139 instance=ExtResource("5_h0kxc")]
+unique_name_in_owner = true

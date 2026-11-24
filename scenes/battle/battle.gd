@@ -1,16 +1,27 @@
 class_name BattleScene
 extends Node2D
 
+## The trainer that the player will play as.
+static var PLAYER_INDEX: int = 0
+
+@onready var ui: BattleUI = %UI
+
 @export var _trainers: Array[Trainer]
 
 var teams: Array[TrainerBattleState]
 
 var _battle_over: bool:
 	get:
+		var teams_alive: PackedInt32Array = []
+		var cards_left: PackedInt32Array = []
 		for team: TrainerBattleState in teams:
-			if !team.trainer.is_alive:
-				return true
-		return false
+			if team.trainer.is_alive:
+				if !teams_alive.has(team._team):
+					var _b: bool = teams_alive.append(team._team)
+				if !cards_left.has(team._team) and (!team._card_hand.is_empty() or !team._draw_pile.is_empty()):
+					var _b: bool = cards_left.append(team._team)
+
+		return teams_alive.size() == 1 or cards_left.size() == 0
 
 
 func _ready() -> void:
@@ -22,16 +33,13 @@ func _ready() -> void:
 		
 		teams.append(TrainerBattleState.create(trainer, i))
 	
+	ui.initialise(teams)
 	_simulate()
 
 
 func _simulate() -> void:
-	var turns: int = 0
 	while !_battle_over:
 		_simulate_round()
-		turns += 1
-
-	print("Turns: {0}".format([turns]))
 
 
 func _simulate_round() -> void:

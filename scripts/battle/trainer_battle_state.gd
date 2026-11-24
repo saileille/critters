@@ -16,7 +16,7 @@ var _draw_pile: Array[Card]
 var available_critters: Array[CritterBattleState]:
 	get:
 		var available: Array[CritterBattleState] = _critters.filter(func(c: CritterBattleState) -> bool:
-			return c.critter.is_alive and c.is_ready
+			return !_card_hand.is_empty() and c.critter.is_alive and c.is_ready
 		)
 		return available
 

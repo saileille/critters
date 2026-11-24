@@ -46,6 +46,17 @@ window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 window/vsync/vsync_mode=2
 
+[file_customization]
+
+folder_colors={
+"res://helpers/": "red",
+"res://localisation/": "orange",
+"res://resources/": "yellow",
+"res://scenes/": "green",
+"res://scripts/": "teal",
+"res://ui/": "blue"
+}
+
 [importer_defaults]
 
 csv_translation={
