@@ -14,7 +14,7 @@ var is_alive: bool:
 
 
 func _get_attack_power(card: Card) -> float:
-	return float(_attack) * card._attack_modifier * 10
+	return float(_attack) * card._attack_modifier
 
 func info() -> String:
 	return "{0}: {1} HP".format([name, hp])

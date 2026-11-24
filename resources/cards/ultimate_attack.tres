@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Card" format=3 uid="uid://cy6m2kgeqirbo"]
+
+[ext_resource type="Script" uid="uid://dsx6sj4besi54" path="res://scripts/resources/card.gd" id="1_4cce1"]
+
+[resource]
+script = ExtResource("1_4cce1")
+_name = "Ultimate Attack"
+_attack_modifier = 1.5
+metadata/_custom_type_script = "uid://dsx6sj4besi54"

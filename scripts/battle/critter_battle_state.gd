@@ -28,7 +28,9 @@ func _initialise(c: Critter, t: int) -> void:
 
 func attack_opponent(opponent: CritterBattleState, card: Card) -> void:
 	@warning_ignore("integer_division", "narrowing_conversion")
-	var damage: int = critter._get_attack_power(card) / opponent.critter.defence
+	var damage: float = critter._get_attack_power(card)
+	
+	damage=float(damage) * (100.0 / (100.0 + float(opponent.critter.defence)))
 
 	opponent.critter.hp -= damage
 	turn_cooldown += 1
