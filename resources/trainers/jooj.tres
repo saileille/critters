@@ -7,5 +7,5 @@
 [resource]
 script = ExtResource("2_8wj02")
 _name = "Jooj"
-_critters = Array[ExtResource("1_3rnrr")]([ExtResource("2_70fpk")])
+critters = Array[ExtResource("1_3rnrr")]([ExtResource("2_70fpk")])
 metadata/_custom_type_script = "uid://cga8d5jylg12j"
